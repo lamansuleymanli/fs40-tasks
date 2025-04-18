@@ -1,0 +1,63 @@
+.wrapper {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-inline: auto;
+}
+p {
+  margin: 0;
+}
+#chipimg {
+  width: 50px;
+  padding-top: 35px;
+  margin-left: -5px;
+}
+.card {
+  width: 310px;
+  height: 200px;
+  min-width: 300px;
+  background-color: rgb(142, 68, 173);
+  margin: 10px;
+  border-radius: 10px;
+  padding-left: 15px;
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+}
+.card-name {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 15px;
+  font-family: monospace;
+}
+.card-number {
+  font-size: 25px;
+  font-weight: 200;
+  margin-top: -5px;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.valid,
+.date {
+  font-family: Tahoma, sans-serif;
+}
+.valid {
+  font-size: 9px;
+}
+.visa-logo {
+  width: 100px;
+  height: 35px;
+  margin-right: 20px;
+  margin-top: -10px;
+}
+.card:nth-child(2) {
+  background-color: green;
+}
+.card:nth-child(3) {
+  background-color: blue;
+}
+.card:nth-child(4) {
+  background-color: black;
+}
