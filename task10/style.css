@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 55px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+.capasity{
+    max-width: 1140px;
+    width: 80%;
+    min-width: 300px;
+    margin: auto;
+}
+.cards{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.card{
+    width: 320px;
+    height: 227px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    margin: 0 15px 30px 15px; 
+}
+footer{
+    width: 80%;
+    height: 45px;
+    margin: 70px auto;
+    border-radius: 10px;
+    background-color: rgb(174, 101, 174);
+}
