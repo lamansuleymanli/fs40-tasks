@@ -1,125 +1,99 @@
 /* task 1
 
-let num = +prompt("Zehmet olmasa ikireqemli bir eded daxil edin:");
-while (num < 100) {
-  num += 7;
+function activeuser(username) {
+  console.log(`${username} is active now`);
 }
-console.log(num);
+activeuser("Laman");
+activeuser("Erkin");
+activeuser("Zenfira"); 
 
 task 2
 
-let N = +prompt("Zehmet olmasa bir eded daxil edin:");
-let i = 0;
-while (i < N) {
-  console.log("I know how to use cycles");
-  i++;
+function findmax(a, b, c) {
+  let max;
+  if (a >= b && a >= c) {
+    max = a;
+  } else if (b >= a && b >= c) {
+    max = b;
+  } else {
+    max = c;
+  }
+  console.log(max);
 }
+findmax(12, 25, 78); 
+findmax(90, 84, 67);     
+findmax(23, 58, 2);     
 
 task 3
 
-let number = 100;
-while (number <= 990) {
-  console.log(number);
-  number += 10;
+function getTotalRubl(rubAmount, dollarAmount, exchangeRate = 75) {
+  const total = rubAmount + (dollarAmount * exchangeRate);
+  console.log(total);
 }
-
-task 4
-
-let numm = 11;
-let sum = 0;
-while (numm <= 99) {
-  sum += eded;
-  numm += 2;
-}
-console.log(sum);
+getTotalRubl(1200, 20);           
 
 
 task 5
 
-let numberr = +prompt("Bir eded daxil et:");
-let currentNum = 100;
-let cem = 0;
-while (currentNum <= 999) {
-  if (currentNum % numberr === 0) {
-    cem += currentNum;
+function findMin(a, b) {
+  if (a < b) {
+    return a;
+  } else {
+    return b;
   }
-   currentNum++;
 }
-console.log(cem);
-
-
 
 task 6
 
-let n = +prompt("Zehmet olmasa bir eded daxil et:");
-while ( n > 1){
-    let sade = true;
-    let bolen = 2;
-    while( bolen < n){
-        if(n % bolen === 0){
-            sade = false;
-            break;
-        }
-        bolen++;
-    }
-    if( sade && n !== 1){
-        console.log(n);
-    }
-    n--;
+function calc(a, b, c) {
+  switch (c) {
+    case "+":
+      return a + b;
+    case "-":
+        return a-b;
+    case "*":
+        return a*b;
+    case "/":
+        return a/b
+    default:
+        return "yanlis deyer"
+  }
 }
-
-task 7
-
-let hasil = 1;
-for (let i = 2; i <= 9; i++) {
-  hasil *= i;
-}
-console.log(hasil);
-
-task 8
-
-let metn = prompt("Zehmet olmasa bir metn daxil edin:");
-let reversedmetn = "";
-for (let i = metn.length - 1; i >= 0; i--) {
-  reversedmetn += metn[i];
-}
-console.log(reversedmetn);
+console.log(calc(10,5,"+"));
+console.log(calc(10,5,"-"));
+console.log(calc(10,5,"*"));
+console.log(calc(10,5,"/"));
 
 
 task 9
 
-let text = prompt("Bir mətn daxil edin:");
-let dot = -1;
-for (let i = 0; i < text.length; i++) {
-  if (text[i] === ".") {
-    dot = i;
-    break;
+function isEven(number) {
+  if (number % 2 === 0) {
+    return true;
+  } else {
+    return false;
   }
 }
-if (dot !== -1) {
-  console.log(`Nöqteye ilk defe ${dot}ci indeksde rast gelindi`);
-} else {
-  console.log(`Metnde nöqteye rast gelinmedi`);
-}
 
 
 
-task 10
 
-let txt = prompt("Bir mətn daxil edin:");
-let digit = false;
-for (let i = 0; i < txt.length; i++) {
-  if (!isNaN(txt[i]) && txt[i] !== " ") {
-    digit = true;
-    break;
-  }
-}
-if (digit) {
-  console.log("Reqem var");
-} else {
-  console.log("Reqem yoxdur");
-}
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
